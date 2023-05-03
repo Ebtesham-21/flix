@@ -39,7 +39,7 @@
 
 
             </form>
-            <a href="login.php" class="signInMessage">Need an account ? Sign up here.</a>
+            <a href="register.php" class="signInMessage">Need an account ? Sign up here.</a>
 
         </div>
 

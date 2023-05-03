@@ -1,5 +1,11 @@
 <?php 
+require_once("includes/config.php");
 require_once("includes/classes/FormSanitizer.php"); 
+require_once("includes/classes/Account.php"); 
+    
+    $account = new Account($con);
+
+
     if(isset($_POST["submitButton"])) 
     {
         $firstName = FormSanitizer :: sanitizeFormString($_POST["firstName"]);  
@@ -7,7 +13,8 @@ require_once("includes/classes/FormSanitizer.php");
         $username = FormSanitizer :: sanitizeFormUsername($_POST["username"]);
         $email = FormSanitizer :: sanitizeFormEmail($_POST["email"]);
         $email2 = FormSanitizer :: sanitizeFormEmail($_POST["email2"]);
-        $password = FormSanitizer :: sanitizeFormPassword($_POST["pass"]);
+        $password = FormSanitizer :: sanitizeFormPassword($_POST["password"]);
+        $password = FormSanitizer :: sanitizeFormPassword($_POST["password2"]);
 
 
         

@@ -1,7 +1,7 @@
 <? 
     if(isset($_POST["submitButton"])) 
     {
-        $firstName = $_POST["firstName"];
+        echo "Form was submitted";
 
     }
 ?>
@@ -21,7 +21,7 @@
         <div class="column">
             <div class="header">
                 <img src="assets/images/logo.png" title="Logo" alt="site logo">
-                <h3>Sign Up</h3>
+                <h3>Sign In</h3>
                 <span>to continue to reeceflix</span>
                
 
@@ -29,19 +29,17 @@
 
             <form method="POST">
 
-                <input type="text" name="firstName" placeholder="First name" required>
-                <input type="text" name="lastName" placeholder="Last name" required>
+            
                 <input type="text" name="userName" placeholder="Username" required>
-                <input type="email" name="email" placeholder="Email" required>
-                <input type="email" name="email2" placeholder="Confirm email" required>
+             
                 <input type="password" name="password" placeholder="Password" required>
-                <input type="password" name="password2" placeholder="Confirm password" required>
+           
                 <input type="submit" name="submitButton" value="SUBMIT">
 
 
 
             </form>
-            <a href="login.php" class="signInMessage">Already have an account ? Sign in here</a>
+            <a href="login.php" class="signInMessage">Need an account ? Sign up here.</a>
 
         </div>
 
